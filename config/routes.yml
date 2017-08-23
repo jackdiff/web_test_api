@@ -1,0 +1,28 @@
+# ======================================================
+# Main routes
+# ======================================================
+# User routes
+user.signin: 
+  path: /user/signin
+  defaults: { _controller: 'Framework\Controller\UserController::login'}
+  methods: [POST]
+
+user.signout: 
+  path: /user/signout
+  defaults: { _controller: 'Framework\Controller\UserController::logout'}
+  methods: [POST]
+
+user.profile:
+  path: /user/{user_id}
+  defaults: { _controller: 'Framework\Controller\UserController::get_profile'}
+  methods: [GET]
+
+user.profile.me:
+  path: /me
+  defaults: { _controller: 'Framework\Controller\UserController::get_my_profile'}
+  methods: [GET]
+
+user.profile.me.update:
+  path: /me/update
+  defaults: { _controller: 'Framework\Controller\UserController::update_profile'}
+  methods: [POST]

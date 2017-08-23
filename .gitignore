@@ -1,0 +1,7 @@
+resources/log/*
+logs/*.*
+vendor/*
+build/*
+upload_img/*
+composer.lock
+

@@ -1,0 +1,28 @@
+{
+    "require": {
+        "silex/silex": "~1.3",
+        "doctrine/dbal": "~2.2",
+        "symfony/http-kernel": "^2.8",
+        "monolog/monolog": "~1.7",
+        "symfony/monolog-bridge": "~2.4",
+        "symfony/yaml": "~2.8",
+        "symfony/config": "~2.8",
+        "predis/predis": "^1.0",
+        "predis/service-provider": "^1.0",
+        "knplabs/console-service-provider": "1.*",
+        "cnam/security-jwt-service-provider":"1.*"
+    },
+    "keywords": ["stack"],
+    "autoload": {
+    	"psr-0": {
+    		"Framework": "src"
+    	}
+    },
+    "require-dev": {
+        "symfony/browser-kit": "^3.0",
+        "symfony/css-selector": "^3.0",
+        "stack/builder": "1.0.3",
+        "zircote/swagger-php": "^2.0",
+        "fr3d/swagger-assertions": "^0.4.0"
+    }
+}
